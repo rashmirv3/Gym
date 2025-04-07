@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rashmi Fitness</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Iansui&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight:100
+        font-style: normal;
+        margin: 0px;
+        padding: 0px;
+        background-image: url("img/training-828741_1280.jpg");
+      }
+
+      .left {
+        color: aliceblue;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: center;
+        font-weight: 700;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: fixed;
+      }
+      .left img {
+        filter: invert(100%);
+        width: 80px;
+        height:45px;
+      }
+
+      .mid {
+
+        color:white;
+        display: block;
+        position: absolute;
+        left: 200px;
+        top: 0px;
+        width: 45%;
+        margin: auto;
+        margin-top: 5px;
+        font-weight: 700;
+        position: fixed;
+
+      }
+      .navbar {
+        display: inline-block;
+        padding: 0px;
+      }
+
+      .navbar li {
+        color: aliceblue;
+        display: inline-block;
+      }
+
+      .navbar li a {
+        color: rgb(214, 230, 245);
+        text-decoration: none;
+        padding: 15px;
+        font-size: 15px;
+      }
+      .navbar li a:hover {
+        color: rgb(141, 129, 42);
+        text-decoration: underline;
+      }
+
+      .right {
+        color: white;
+        display: inline-block;
+        position: absolute;
+        right: 40px;
+        top: 0px;
+        margin-top: 10px;
+        position: fixed;
+
+      }
+      .btn1 {
+        margin: 0px px;
+        color: aliceblue;
+        background-color: rgb(11, 1, 1);
+        padding: 4px 14px;
+        border: 1px solid rgb(252, 252, 249);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn2 {
+        margin: 0px 9px;
+        color: aliceblue;
+        background-color: rgb(11, 1, 1);
+        padding: 4px 20px;
+        border: 1px solid rgb(245, 245, 241);
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn1:hover {
+        color: rgb(12, 110, 195);
+        background-color: rgb(235, 215, 215);
+      }
+      .btn2:hover {
+        color: rgb(12, 110, 195);
+        background-color: rgb(235, 215, 215);
+      }
+      .container{
+      border:2px solid white;
+      color: aliceblue;
+      margin: 154px 58px;
+      padding: 50px 40px;
+      width: 30%;
+      border-radius: 23px;
+      font-size: 12px;
+      font-weight: 800;
+      text-align: center;
+
+      }
+      .formgroup{
+          margin:3px;
+          text-align: center;
+          padding-left: 13%;
+
+
+      }
+      input{
+         text-align: center;
+         display:block;
+         width: 80%;
+         padding: 6px;
+         border-radius: 15px;
+         font-size: 14px;
+         font-weight: bold;
+      }
+
+      .container button{
+          margin: 10px ;
+          margin-left: 5px;
+          width:72%;
+          border-radius: 15px;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="img/barbell-7834321_1280.jpg" />
+        <div>Rashmi Fitness</div>
+      </div>
+      <!-- mid box for navigation -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">FITNESS CALCULATOR</a></li>
+          <li><a href="#">CONTENT US</a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+        <button class="btn1">Call us now</button>
+        <button class="btn2">Email</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join the best gym of Hubli now</h1>
+      <form action="noaction.php">
+        <div class="formgroup">
+          <input type="text" placeholder="Enter your Name" />
+        </div>
+        <div class="formgroup">
+          <input type="text" placeholder="Enter your Age" />
+        </div>
+        <div class="formgroup">
+          <input type="text" placeholder="Enter your Gender" />
+        </div>
+        <div class="formgroup">
+          <input type="text" placeholder="Enter your Locality" />
+        </div>
+        <div>
+          <button class="btn1" id="button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
